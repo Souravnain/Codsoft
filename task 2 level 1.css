@@ -1,0 +1,159 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #202124;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ✅ Header */
+header {
+  background-color: #202124;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 30px;
+  color: #B11226;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #B11226;
+}
+
+/* ✅ Hero Section with Image */
+.hero-image-box {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.truck-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4); /* Darken image for text visibility */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.hero-text h2 {
+  font-size: 42px;
+  color: #fca311;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  max-width: 700px;
+}
+
+.btn {
+  background-color: #B11226;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8f0f20;
+}
+
+/* ✅ Features Section */
+.features {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #202124;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  color: #fff;
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* ✅ Different Color Cards */
+.card-red {
+  background-color: #B11226;
+}
+
+.card-yellow {
+  background-color: #fca311;
+  color: #202124;
+}
+
+.card-blue {
+  background-color: #1f77b4;
+}
+
+/* ✅ Footer */
+footer {
+  background-color: #202124;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #fca311;
+  text-decoration: none;
+}
+
